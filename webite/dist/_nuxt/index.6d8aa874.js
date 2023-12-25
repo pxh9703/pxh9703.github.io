@@ -1,1 +1,0 @@
-import{J as s}from"./base.3d3ddc76.js";import{A as o,k as t,z as r}from"./entry.a69ecbf9.js";const a=["","default","small","large"],c=s({type:String,values:a,required:!1}),i=Symbol("size"),l=()=>{const e=o(i,{});return t(()=>r(e.size)||"")};export{i as S,l as a,a as c,c as u};

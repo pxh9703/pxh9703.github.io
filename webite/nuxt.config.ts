@@ -14,8 +14,9 @@ export default defineNuxtConfig({
     },
   },
   dir: {
-    pages: "views",
+    pages: "docs",
   },
+  
   app: {
     head: {
       // title: 'nuxt3-ts-vite',
