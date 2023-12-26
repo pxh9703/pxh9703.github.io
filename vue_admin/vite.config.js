@@ -9,7 +9,7 @@ import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/yuuvue/dist/',
+  base: '/vue_admin/dist/',
   plugins: [
     vue(),
     AutoImport({
