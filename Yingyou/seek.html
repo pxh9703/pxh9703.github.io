@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./js/jquery.js"></script>
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+  <script src="./js/swiper-bundle.min.js"></script>
+  <link rel="stylesheet" href="./css/seek.css">
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <!-- 头部 -->
+  <div class="index-top">
+    <div class="top-titl">
+      寻找营友
+    </div>
+    <div class="top-titl2">
+      ——LOOK FOR CAMPERS——
+    </div>
+    <div class="open">
+      开启你的梦想之旅吧
+    </div>
+    <div class="suk">
+      <form class="example" action="">
+        <input type="text" placeholder="输入你想要去的地方" id="searchBox" class="inpt">
+        <button onclick="search()"><i class="fa fa-search"></i>搜索</button>
+      </form>
+    </div>
+  </div>
+  <!-- 头部 -->
+  <!-- 热门活动 -->
+  <div class="activity">
+    <!-- 标题 -->
+
+    <div class="title"> <a href="">热门活动 </a></div>
+    <div class="subtitle">ACTIVITIES</div>
+
+    <!-- 标题 -->
+    <div class="Popular">
+      <!-- <div class="Popular-img"><a href=""><img src="./img/ydtj/5.png" alt=""></a>
+      </div> -->
+      <div class="Popular-img2">
+        <img src="./img/ydtj/5.png" alt="" class="ssds">
+        <div class="ssddf">
+          <div class="itme2-title">
+            大型活动招募令
+          </div>
+          <div class="itme2-content">想要开启一场前所未有的露营体验吗?
+            在营友圈约_上三五营友，现在就奔赴荒
+            野露营吧!
+          </div>
+          <a href="" class="itme2-xq">查看更多>></a>
+        </div>
+      </div>
+      <div class="Popular-img2">
+        <img src="./img/ydtj/6.png" alt="" class="ssds">
+        <div class="ssddf">
+          <div class="itme2-title">
+            大型活动招募令
+          </div>
+          <div class="itme2-content">想要开启一场前所未有的露营体验吗?
+            在营友圈约_上三五营友，现在就奔赴荒
+            野露营吧!
+          </div>
+          <a href="" class="itme2-xq">查看更多>></a>
+        </div>
+      </div>
+      <div class="Popular-img3">
+        <img src="./img/ydtj/7.png" alt="" class="ssds">
+        <div class="ssddf">
+          <div class="itme2-title">
+            大型活动招募令
+          </div>
+          <div class="itme2-content">想要开启一场前所未有的露营体验吗?
+            在营友圈约_上三五营友，现在就奔赴荒
+            野露营吧!
+          </div>
+          <a href="" class="itme2-xq">查看更多>></a>
+        </div>
+      </div>
+      <div class="Popular-img3">
+        <img src="./img/ydtj/8.png" alt="" class="ssds">
+        <div class="ssddf">
+          <div class="itme2-title">
+            大型活动招募令
+          </div>
+          <div class="itme2-content">想要开启一场前所未有的露营体验吗?
+            在营友圈约_上三五营友，现在就奔赴荒
+            野露营吧!
+          </div>
+          <a href="" class="itme2-xq">查看更多>></a>
+        </div>
+      </div>
+
+      <div class="Popular-y">
+        <div><img src="./img/seek/yuan.png" alt=""></div>
+        <div class="act">ACTIVITIES</div>
+      </div>
+    </div>
+  </div>
+  <!-- 营地榜单 -->
+  <div class="activity">
+    <!-- 标题 -->
+
+    <div class="title"> <a href="">营友分享 </a></div>
+    <div class="subtitle">ACTIVITIES</div>
+
+    <!-- 标题 -->
+    <div>
+
+      <!-- 标签栏 -->
+      <div class="tab">
+        <button class="tablinks" onclick="openTab(event, 'Tab1')">企业品牌</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab2')">新闻资讯</button>
+        <button class="tablinks" onclick="openTab(event, 'Tab3')">时尚服务</button>
+      </div>
+
+      <!-- 标签内容 -->
+      <div id="Tab1" class="tabcontent">
+
+      </div>
+
+      <div id="Tab2" class="tabcontent">
+        <!-- Swiper -->
+        <div class="swiper-container">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/seek/q1.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/seek/q2.png" alt=""></div>
+            <div class="swiper-slide"><img src="./img/seek/q3.png" alt=""></div>
+          </div>
+        </div>
+        <!-- Swiper -->
+      </div>
+
+      <div id="Tab3" class="tabcontent">
+        <h3>标签3内容</h3>
+        <p>这是标签3的内容。</p>
+      </div>
+
+    </div>
+  </div>
+  <food></food>
+</body>
+
+<script type="text/javascript">
+  $(function () {
+    $("header").load("./header.html");
+    $('food').load("./food.html")
+  });
+</script>
+
+<script>
+  // 默认显示第一个标签
+  document.getElementById("Tab2").style.display = "block";
+
+  function openTab(evt, tabName) {
+    var i, tabcontent, tablinks;
+
+    // 隐藏所有标签内容
+    tabcontent = document.getElementsByClassName("tabcontent");
+    for (i = 0; i < tabcontent.length; i++) {
+      tabcontent[i].style.display = "none";
+    }
+
+    // 移除所有标签按钮的激活状态
+    tablinks = document.getElementsByClassName("tablinks");
+    for (i = 0; i < tablinks.length; i++) {
+      tablinks[i].className = tablinks[i].className.replace(" active", "");
+    }
+
+    // 显示当前标签内容，并将按钮设置为激活状态
+    document.getElementById(tabName).style.display = "block";
+    evt.currentTarget.className += " active";
+  }
+</script>
+<script>
+  var swiper = new Swiper('.swiper-container', {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    centeredSlides: true,
+    loop: true,
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    }, breakpoints: {
+    768: {
+      slidesPerView: 3,
+    }
+  }
+  });
+</script>
+
+</html>

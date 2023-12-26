@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/aboutus.css">
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=3IVDljG2YMK6vETgaPKenQdWQLZTxwnr"></script>
+  <script src="./js/jquery.js"></script>
+  <title>Document</title>
+</head>
+
+<body>
+  <header></header>
+  <div class="index-top">
+    <div class="top-titl">
+      人生营家
+    </div>
+    <div class="top-titl2">
+      ——来体验自然的美好——
+    </div>
+  </div>
+  <!-- 标题 -->
+  <div class="title"><a href="">联系我们</a></div>
+  <div class="subtitle">Contece Us</div>
+  <!-- 标题 -->
+  <!-- 表单 -->
+  <div class="from">
+    <form action="">
+      <div class="frombox">
+        <label for="">姓名
+          <!-- <div class="sj">11:00-22:00</div> -->
+        </label>
+        <div class="iput-le">
+          <input type="text" placeholder="姓名" class="name">
+
+        </div>
+      </div>
+      
+      <div class="frombox">
+        <label for="" class="dz">
+          <div class="ly">邮箱</div>
+        </label>
+        <div class="iput-le">
+          <input type="text" placeholder="请输入邮箱" class="address">
+        </div>
+      </div>
+      <div class="frombox">
+        <label for="" class="dz">
+          <div class="ly">地址</div>
+        </label>
+        <div class="iput-le">
+          <input type="text" placeholder="山东省xx市岱岳区xxx" class="address">
+        </div>
+      </div>
+      <div class="frombox">
+        <label for="" class="dz">
+          <div class="ly">给我们留言</div>
+
+        </label>
+        <div class="iput-le">
+          <textarea name="" id="" cols="30" rows="10" class="text"></textarea>
+        </div>
+      </div>
+    </form>
+  </div>
+  <div class="from">
+    <div id="container"></div>
+  </div>
+  <!-- 表单 -->
+  <!-- 底部 -->
+  <food></food>
+  <!-- 底部 -->
+
+</body>
+<script>
+  var map = new BMap.Map("container");
+  var point = new BMap.Point(116.404, 39.915);
+  map.centerAndZoom(point, 15);
+
+</script>
+<script type="text/javascript">
+  $(function () {
+    $("header").load("./header.html");
+    $('food').load("./food.html")
+  });
+</script>
+
+</html>

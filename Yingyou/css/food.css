@@ -1,0 +1,126 @@
+a {
+  text-decoration: none;
+  color: black;
+}
+.footbody {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.z1 {
+  display: flex;
+  justify-content: space-between;
+  width: 65%;
+}
+.foot {
+  width: 100%;
+  background-color: #f9f7fb;
+  margin-top: 4%;
+}
+.footleft {
+  width: 30%;
+  padding-top: 5%;
+}
+.footic {
+  display: flex;
+  justify-content: space-between;
+}
+.footic div {
+  width: 30%;
+}
+.footic div img {
+  width: 100%;
+}
+.lefttext1 {
+  font-weight: bold;
+  font-size: 1.3vw;
+  margin-bottom: 10px;
+}
+.lefttext2 {
+  font-size: 1vw;
+}
+.lefttext3 {
+  font-size: 1.3vw;
+  font-weight: bold;
+  padding-top: 5%;
+}
+.lefttext3 a {
+  font-size: 1.2vw;
+  text-decoration: none;
+  color: #81b1ff;
+}
+.lefttext4 {
+  font-size: 1.3vw;
+}
+lefttext4 a {
+  font-size: 1.3vw;
+}
+.footic {
+  padding-top: 5%;
+  padding-bottom: 8%;
+}
+.footleft2title1 {
+  font-weight: bold;
+  font-size: 1.6vw;
+  margin-bottom: 7%;
+}
+.footleft2 div :hover{
+  color: #81b1ff;
+  text-decoration: underline;
+}
+.footleft2 div a {
+  font-size: 1vw; 
+  text-decoration: none;
+  /* color: #81b1ff; */
+}
+
+.footleft2 {
+  padding-top: 5%;
+}
+.footleft2 div {
+  line-height: 34px;
+}
+.footbotm a{
+  color: #fff;
+  font-size: 15px;
+}
+.footbotm {
+  background-color: #252b3a;
+  width: 100%;
+  line-height: 30px;
+  text-align: center;
+  height: 30px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+@media screen and (max-width: 768px) {
+  .footleft2 {
+    padding-top: 5%;
+    /* display: none; */
+  }
+  .footleft {
+    width: 100%;
+    padding-top: 5%;
+  }
+  .maad {
+    display: flex;
+  }
+  .maadl {
+    width: 50%;
+  }
+  .footbody {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: column-reverse;
+  }
+  .z1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

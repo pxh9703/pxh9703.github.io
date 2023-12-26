@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/equip.css">
+  <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+
+  <script src="./js/jquery.js"></script>
+  <title>Document</title>
+  <style>
+
+
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <div class="equip-back">
+    <div class="eq-body-riht2">
+      <div><a href="">营地 <br> 秒杀</a> </div>
+      <div><a href="">猜你 <br> 喜欢</a> </div>
+      <div><a href="">营地 <br> 客服</a> </div>
+      <div><a href="">营地 <br> 反馈</a> </div>
+      <div><a href="" id="btn5">返回<br> 顶部</a> </div>
+    </div>
+    <div class="equip-top">
+      <div class="searhs">
+        <div class="searhs-img">
+          <img src="./img/equip/Y-1.png" alt="">
+        </div>
+        <div class="searh-input">
+          <input type="text" placeholder="输入你想要去的地方" id="searchBox" class="inpt">
+          <a href="" onclick="search()" class="searh-input_a"><img src="./img/equip/su.png" alt=""></a>
+          <!-- <button onclick="search()"></button> -->
+        </div>
+        <div class="searh-shopping">
+          <div class="searh-shopping_img"><img src="./img/equip/gwc.png" alt=""></div>
+          <div class="searh-shopping_gw">购物车</div>
+        </div>
+      </div>
+
+      <div class="eq-body">
+        <div class="eq-body-left">
+          <div class="eqbl-tiyl">找装备</div>
+          <div class="eqbl-content">
+            <div class="img-xj">
+              <img src="./img/equip/xj.png" alt="">
+            </div>
+            <div class="nr"> <a href="">餐具</a> /<a href="">锅具</a>/ <a href="">炊具</a> </div>
+          </div>
+
+          <div class="eqbl-content">
+            <div class="img-xj">
+              <img src="./img/equip/xj.png" alt="">
+            </div>
+            <div class="nr"> <a href="">工具箱</a> /<a href="">锤钉</a>/ <a href="">推车</a> </div>
+          </div>
+          <a href="">
+            <div class="eqbl-content">
+              <div class="img-xj">
+                <img src="./img/equip/xj.png" alt="">
+              </div>
+              <div class="nr"><a href="">帐篷</a> /<a href="">睡袋</a>/ <a href="">充气床</a></div>
+            </div>
+          </a> <a href="">
+            <div class="eqbl-content">
+              <div class="img-xj">
+                <img src="./img/equip/xj.png" alt="">
+              </div>
+              <div class="nr"> <a href="">背包</a> /<a href="">登山鞋</a>/ <a href="">冲锋衣</a> </div>
+            </div>
+          </a>
+          <div class="dropdown">
+            <button class="dropbtn">下拉菜单<i class="fa fa-caret-down"></i>
+            </button>
+            <div class="dropdown-content">
+              <a href="#">链接 1</a>
+              <a href="#">链接 2</a>
+              <a href="#">链接 3</a>
+            </div>
+          </div>
+          <!-- <div>
+            <div class="zkgd"><a href="">展开更多</a></div>
+            <img src="./img/equip/dbx.png" alt="" class="dbx">
+          </div> -->
+
+        </div>
+        <div class="lst">
+          <div class="swwc">
+            <div class="swiper gallery-top">
+              <div class="swiper-wrapper  ">
+                <div class="swiper-slide"><a href=""><img src="./img/equip/13.png" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./img/equip/13.png" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./img/equip/13.png" alt=""></a></div>
+                <div class="swiper-slide"><a href=""><img src="./img/equip/13.png" alt=""></a></div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-container gallery-thumbs">
+            <div class="swiper-wrapper " id="sfs">
+              <div class="swiper-slide " id="sdsafa"><img src="./img/equip/13.png" alt=""></div>
+              <div class="swiper-slide"><img src="./img/equip/13.png" alt=""></div>
+              <div class="swiper-slide"><img src="./img/equip/13.png" alt=""></div>
+              <div class="swiper-slide"><img src="./img/equip/13.png" alt=""></div>
+            </div>
+          </div>
+
+        </div>
+
+
+      </div>
+    </div>
+    <!-- 闪购 -->
+    <div class="Flashkilling">
+      <div class="mx">
+        <div class="mx-title">营地秒杀</div>
+        <div class="img-sd"><img src="./img/equip/sd.png" alt=""></div>
+        <div class="js">18:00点场距结束 </div>
+        <div class="mx-time-box">
+          <div class="mx-time">00</div>:
+          <div class="mx-time">00</div>:
+          <div class="mx-time">00</div>
+        </div>
+      </div>
+      <div class="ssd">
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div>
+                <div class="sw-box">
+                  <div><img src="./img/equip/19.png" alt=""></div>
+                  <div class="zp">帐篷</div>
+                  <a href="" class="sw-but">立即抢购</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="sw-box">
+                  <div><img src="./img/equip/19.png" alt=""></div>
+                  <div class="zp">帐篷</div>
+                  <a href="" class="sw-but">立即抢购</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="sw-box">
+                  <div><img src="./img/equip/22.png" alt=""></div>
+                  <div class="zp">帐篷</div>
+                  <a href="" class="sw-but">立即抢购</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="sw-box">
+                  <div><img src="./img/equip/22.png" alt=""></div>
+                  <div class="zp">帐篷</div>
+                  <a href="" class="sw-but">立即抢购</a>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-slide">
+              <div>
+                <div class="sw-box">
+                  <div><img src="./img/equip/22.png" alt=""></div>
+                  <div class="zp">帐篷</div>
+                  <a href="" class="sw-but">立即抢购</a>
+                </div>
+              </div>
+            </div>
+          </div>
+    
+        </div>
+      </div>
+    </div>
+
+    <!-- 闪购 -->
+    <!-- 喜欢 -->
+    <div class="love-list">
+      <div class="love-list-img"><img src="./img/equip/Y-1.png" alt=""></div>
+      <div class="love-list-tit"><a href="">猜你喜欢</a></div>
+      <div class="love-list-img"><img src="./img/equip/Y-1.png" alt=""></div>
+    </div>
+    <!-- 喜欢 -->
+    <div class="like">
+      <div class="linke1">
+
+        <div class="like-box1">
+          <div class="link-box1t">营地座椅</div>
+          <div class="link-box1co">找装备买好货</div>
+          <a href="">
+            <div class="img-52"><img src="./img/equip/52.png" alt=""></div>
+          </a>
+
+        </div>
+        <div class="like-box2">
+          <div class="link-box2t">营地座椅</div>
+          <div class="link-box1co">找装备买好货</div>
+          <a href="">
+            <div class="img-52"><img src="./img/equip/56.png" alt=""></div>
+          </a>
+        </div>
+
+      </div>
+      <div class="like-box3">
+        <div class="like-boxt">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/25.png" alt=""></div>
+          </a>
+        </div>
+        <div class="like-boxt">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/25.png" alt=""></div>
+          </a>
+        </div>
+        <div class="like-boxt">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/25.png" alt=""></div>
+          </a>
+        </div>
+        <div class="like-boxt">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/25.png" alt=""></div>
+          </a>
+        </div>
+        <!-- <div class="like-boxt3">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/28.png" alt=""></div>
+          </a>
+        </div>
+        <div class="like-boxt">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/26.png" alt=""></div>
+          </a>
+        </div>
+        <div class="like-boxt3">
+          <div class="like-boxt2">
+            <div class="like-boxtt">户外运动</div>
+            <div class="like-boxttf">优惠式一站购</div>
+          </div>
+          <a href="">
+            <div class="img27"><img src="./img/equip/27.png" alt=""></div>
+          </a>
+        </div> -->
+      </div>
+
+
+    </div>
+    <a href="" class="gdzb">更多装备</a>
+
+  </div>
+  <food></food>
+</body>
+<script src="./js/sww.js"></script>
+<script src="./js/sw.js"></script>
+
+
+<script type="text/javascript">
+  $(function () {
+    $("header").load("./header.html");
+    $('food').load("./food.html")
+  });
+</script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    loop: true,
+    slidesPerView: 2,
+    spaceBetween: 10,
+    freeMode: true, autoplay: true, // 如果需要前进后退按钮
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    breakpoints: {
+      768: {
+        slidesPerView: 3,
+      }
+    }
+  });
+</script>
+<script type="text/javascript">
+  window.onload = function () {
+    // 1.找到页面中的按钮
+    var totop = document.getElementById("btn5");
+    totop.style.display = "block";
+    var timer = null;
+
+    // 2. 给按钮绑定点击事件
+    totop.onclick = function () {
+      // 周期性定时
+      timer = setInterval(function () {
+        // 3.获取滚动条距离浏览器顶端的距离
+        var backTop = document.documentElement.scrollTop ||
+          document.body.scrollTop;
+
+        // 越滚越慢
+        speedTop = backTop / 5;
+        document.documentElement.scrollTop = backTop - speedTop;
+        if (backTop == 0) {
+          clearInterval(timer);
+        }
+      }, 30)
+    }
+  }
+
+</script>
+<script>
+  var galleryThumbs = new Swiper('.gallery-thumbs', {
+    spaceBetween: 3,
+    slidesPerView: 3,
+    freeMode: true,
+    watchSlidesVisibility: true,
+    watchSlidesProgress: true,
+  });
+  var galleryTop = new Swiper('.gallery-top', {
+    spaceBetween: 3, slidesPerView: 1,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    thumbs: {
+      swiper: galleryThumbs
+    }
+  });
+</script>
+
+</html>

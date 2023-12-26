@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://www.w3schools.cn/cdnjs/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Document</title>
+
+</head>
+<style>
+  img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .searhs {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+  }
+
+  .searh-input {
+    width: 70%;
+    background-color: #5C7BDA;
+    border-radius: 5px;
+    height: 30px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .searhs-img img {
+    height: 50px;
+  }
+
+  .fa-search {
+    color: #fff;
+  }
+
+  .inpt {
+    height: 30px;
+    width: 90%;
+    padding: 0;
+    margin: 0;
+    border-radius: 5px;
+    outline: none;
+    border: 0;
+    text-indent: 1em;
+  }
+
+  .searh-input_a {
+    display: block;
+    width: 6%;
+  }
+
+  .searh-input_a img {
+    height: 30px;
+  }
+
+  .searh-shopping {
+    width: 15%;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 5px #ccc;
+    height: 40px;
+    color: #607EDB;
+    padding: 5px;
+    text-align: center;
+    border-radius: 4px;
+  }
+
+  .searh-shopping_img {
+    height: 80%;
+  }
+
+</style>
+
+<body>
+
+  <div class="searhs">
+    <div class="searhs-img">
+      <img src="./img/equip/Y-1.png" alt="">
+    </div>
+    <div class="searh-input">
+      <input type="text" placeholder="输入你想要去的地方" id="searchBox" class="inpt">
+      <a href="" onclick="search()" class="searh-input_a"><img src="./img/equip/su.png" alt=""></a>
+      <!-- <button onclick="search()"></button> -->
+    </div>
+    <div class="searh-shopping">
+      <div class="searh-shopping_img"><img src="./img/equip/gwc.png" alt=""></div>
+      <div class="searh-shopping_gw">购物车</div>
+    </div>
+  </div>
+
+</body>
+
+</html>

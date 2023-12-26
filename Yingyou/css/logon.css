@@ -1,0 +1,116 @@
+.logon2 {
+  background-image: url(../img/logon/123.png);
+  background-size: 100% 100%;
+  padding: 30px 0 30px 0;
+}
+.logon-box {
+  width: 50%;
+  margin: auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 10px;
+}
+.logon-box11 {
+  display: flex;
+}
+.logon-left {
+  width: 50%;
+}
+.img-rwm {
+  margin: auto;
+  width: 50%;
+}
+.lol-t {
+  display: flex;
+  width: 40%;
+  margin: 20px auto;
+  font-size: 1.2vw;
+}
+.imgwx {
+  width: 36px;
+  height: 36px;
+}
+
+.imgqq img {
+  width: 30px;
+  height: 30px;
+}
+.dengl {
+  display: flex;
+}
+.qhdl {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.login-container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.login-container h2 {
+  text-align: center;
+}
+
+.login-container input[type="text"],
+.login-container input[type="password"] {
+  width: 94%;
+  padding: 10px;
+  margin-top: 20px;
+  outline: none;
+  height: 40px;
+}
+
+.login-container button {
+  width: 80%;
+  padding: 10px;
+  margin: 20px auto;
+  display: grid;
+  background-color: #0099ff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  height: 40px;
+}
+
+.login-container button:hover {
+  opacity: 0.8;
+}
+.logon-riht {
+  width: 50%;
+}
+.logon-boot {
+  margin-top: 30px;
+  display: flex;
+  justify-content: space-between;
+
+  height: 20px;
+  list-style: 20px;
+}
+.logon-boot a {
+  font-size: 14px;
+  color: #ccc;
+  background-color: #fafafa;
+}
+@media screen and (max-width: 768px) {
+  .logon-box11 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .logon-left {
+    width: 100%;
+  }
+  .logon-riht {
+    width: 100%;
+  }
+  .logon-box {
+    width: 80%;
+    margin: auto;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+  }
+}

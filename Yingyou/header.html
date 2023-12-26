@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://www.w3schools.cn/cdnjs/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/header.css">
+
+</head>
+
+<body>
+    <!-- <div class="header">
+       
+        <div class="header-riht">
+            <div><a href="">首页</a></div>
+            <div><a href="">首页</a></div>
+            <div><a href="">首页</a></div>
+        </div>
+    </div> -->
+    <div class="topnav" id="myTopnav">
+        <div class="logimg">
+            <img src="./img/Y.png" alt="">
+            <div class="hear-rsy">人生营家</div>
+        </div>
+        <div class="log-riht">
+            <a href="./index.html" class="active">首页</a>
+            <a href="./recommend.html">营地推荐</a>
+            <a href="./seek.html">营友圈</a>
+            <a href="./equip.html">找装备</a>
+            <a href="./aboutus.html">联系我们</a>
+            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                <i class="fa fa-bars"></i>
+            </a>
+
+            <div class="logon">
+                <button onclick="jump()" class="but-logon">登录</button>
+                <button class="but-logon">注册</button>
+            </div>
+        </div>
+        <form class="example2" action="/action_page.php" style="margin:auto;max-width:300px">
+            <input type="text" placeholder="搜索.." name="search2" id="searchBox">
+            <button type="submit" onclick="search()"><i class="fa fa-search"></i></button>
+        </form>
+
+    </div>
+
+</body>
+<script src="./js/jquery.js"></script>
+
+<script>
+    function jump() {
+        window.location.href = "./logon.html";
+    }
+    function myFunction() {
+        var x = document.getElementById("myTopnav");
+        if (x.className === "topnav") {
+            x.className += " responsive";
+        } else {
+            x.className = "topnav";
+        }
+    }
+</script>
+<script>
+    function search() {
+        var searchBox = document.getElementById("searchBox");
+        var searchText = searchBox.value.trim(); // 获取搜索框的值并去除首尾空格
+
+        if (searchText === "") {
+            // 搜索框无内容，弹出警告窗提示用户输入内容
+            alert("请输入搜索内容");
+            return;
+        }
+
+        // 执行搜索操作
+        console.log("搜索内容：" + searchText);
+    }
+</script>
+
+</html>
