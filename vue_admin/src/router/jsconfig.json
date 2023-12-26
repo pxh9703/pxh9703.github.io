@@ -1,0 +1,21 @@
+{
+  "include": [
+    "src/**/*",
+    "src/**/*.vue",
+    "./auto-imports.d.ts",
+    "./components.d.ts"
+  ],
+  "compilerOptions": {
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist"
+  ]
+}
