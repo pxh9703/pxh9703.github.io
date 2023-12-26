@@ -1,0 +1,41 @@
+.layout-container {
+  @apply relative;
+  @apply h-screen;
+  :deep(.slidbar) {
+    @apply absolute left-0 w-[180px];
+    @apply h-full;
+    @apply bg-[#545c64];
+    .el-menu {
+      @apply border-0;
+    }
+  }
+  .main-view {
+    @apply right-0 ml-[180px];
+    @apply w-[calc(100vw-180px)] h-full;
+    .navbar {
+      @apply relative bg-[#545c64] py-2;
+      .bread-nav {
+        @apply text-white py-3 px-5;
+        @apply border-l-[1px] border-[#fff];
+        :deep(.el-breadcrumb) {
+          * {
+            @apply text-white;
+          }
+        }
+      }
+      .userinfo-container {
+        @apply absolute right-2 top-1/2  transform -translate-y-1/2;
+      }
+    }
+  }
+
+  &.active {
+    :deep(.slidbar) {
+      @apply w-auto;
+    }
+    .main-view {
+      @apply ml-[64px] w-[calc(100vw-64px)];
+      @apply transition-all duration-[1000];
+    }
+  }
+}
