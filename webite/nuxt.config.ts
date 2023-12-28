@@ -16,8 +16,12 @@ export default defineNuxtConfig({
   dir: {
     pages: "views",
   },
+  router:{
+    base:"/nuxt-bloge"
+  },
 generate: {
-  dir:'docs'
+  dir:'docs',
+  subFolders:false
 },
   app: {
     head: {
